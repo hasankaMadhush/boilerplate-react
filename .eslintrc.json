@@ -1,0 +1,36 @@
+{
+  "extends": ["react-app"],
+  "plugins": ["react-hooks"],
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "tabWidth": 2,
+        "ignorePattern": "^import.*"
+      }
+    ],
+    "semi": 1,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "only-multiline"
+      }
+    ],
+    "key-spacing": ["error", { "beforeColon": false }],
+    "space-before-function-paren": ["error", "never"],
+    "space-infix-ops": "error",
+    "keyword-spacing": ["error", { "before": true }],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }]
+  },
+  "globals": {
+    "__": true
+  }
+}
